@@ -1,20 +1,20 @@
 package com.onedigitalinnovation.personapi.services;
 
-import lombok.AllArgsConstructor;
+
 import com.onedigitalinnovation.personapi.dto.mapper.PersonMapper;
 import com.onedigitalinnovation.personapi.dto.request.PersonDTO;
 import com.onedigitalinnovation.personapi.dto.response.MessageResponseDTO;
 import com.onedigitalinnovation.personapi.entities.Person;
 import com.onedigitalinnovation.personapi.exception.PersonNotFoundException;
 import com.onedigitalinnovation.personapi.repositories.PersonRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
-@AllArgsConstructor(onConstructor = @__(@Autowired))
+
 public class PersonService {
 
     private final PersonRepository personRepository;
